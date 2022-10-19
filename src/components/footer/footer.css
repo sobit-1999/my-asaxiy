@@ -1,0 +1,21 @@
+.footer-container{
+    background-color: rgb(64, 118, 193);
+    padding: 50px 7%;
+}
+.footer-grid-icon{
+    display: grid;
+    grid-template-columns: 22% 22% 22% auto;
+    grid-gap: 4%;
+    padding: 30px;
+    align-items: center;
+}
+ .card{
+    display: flex;
+    cursor: pointer;
+}
+.footer-grid-card2{
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    margin: 50px 0;
+    color: #fff;
+}

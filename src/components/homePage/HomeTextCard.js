@@ -81,12 +81,12 @@ export default function HomeTextCard() {
           <br />
         </Typography>
       </Card>
-      <Box className="logo-phone-card">
+      {/* <Box className="logo-phone-card">
         <img alt="phone" src={phoneLogo} width="60%"/>
         <Box sx={{bgcolor:"blue"}}>
             kk
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 }
