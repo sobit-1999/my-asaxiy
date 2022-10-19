@@ -16,13 +16,13 @@ export default function Footer() {
         {footerGrid.map((item, i) => {
           return (
             <Box className="card" key={i}>
-              <img alt="grid" src={item.img} width="70px" />
+              <img alt="grid" src={item.img} width="75px" />
               <Box sx={{ ml: 2 }}>
                 <Typography component="div" variant="h6">
                   {item.name}
                 </Typography>
 
-                <Typography component="div" variant="p">
+                <Typography sx={{mt: 1}} component="div" variant="p">
                   {item.text}
                 </Typography>
               </Box>
