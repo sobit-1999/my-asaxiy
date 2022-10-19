@@ -13,12 +13,8 @@ import {
 import React from "react";
 import phoneLogo from "../images/phone-logo.png";
 import "./homePage.css"
+import ListCard from "./ListCard";
 export default function HomeTextCard() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClick = (e) => {
-    setOpen(!open);
-  };
 
   return (
     <>
@@ -48,26 +44,7 @@ export default function HomeTextCard() {
         >
           {category.map((item, i) => {
             return (
-              <Box key={i}>
-                {" "}
-                <ListItemButton onClick={handleClick}>
-                  <ListItemText primary={item.name} />
-                  {open ? <ExpandLess /> : <ExpandMore />}
-                </ListItemButton>
-                <Collapse in={open} timeout="auto" unmountOnExit>
-                  <List component="div" disablePadding>
-                    <ListItemButton sx={{ pl: 4 }}>
-                      <ListItemText
-                        primary={
-                          <Typography component="div" variant="p">
-                            {item.text}
-                          </Typography>
-                        }
-                      />
-                    </ListItemButton>
-                  </List>
-                </Collapse>
-              </Box>
+              <ListCard key={i} item={item}/>
             );
           })}
         </List>
