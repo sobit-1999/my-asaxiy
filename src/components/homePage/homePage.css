@@ -1,0 +1,27 @@
+.home-card{
+    display: grid;
+    grid-template-columns: 70% auto;
+    padding: 20px;
+}
+.shop-card{
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-gap: 3%;
+}
+.shop-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    /* color: rgba(0, 0, 0, 0.086); */
+}
+
+.logo-phone-card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-gap: 50px;
+    background-color: rgb(48, 152, 221);
+    height: 300px;
+    align-items: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,27 @@
+.header-container{
+    padding: 15px 7%;
+    color: black;
+    grid-gap: 4%;
+}
+.navbar-input {
+  background-color: rgb(48, 152, 221);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  height: 45px;
+  border-radius: 10px;
+  /* margin: 0 5%; */
+}
+.navbar-input input {
+  font-size: 20px;
+  height: 100%;
+  width: 79%;
+  border: none;
+  outline: none;
+  border-radius: 10px 20px 20px 10px;
+  position: absolute;
+  border: 2px solid rgb(48, 152, 221);
+  padding-left: 10px;
+}
